@@ -53,37 +53,15 @@ public class IterationControlStructureQuiz {
 //			}
 //		}
 		
-//		int counter = 0;
-//		while (counter <= 7) {
-//			if (counter % 2 == 0) {
-//				counter += 1;
-//				continue;
-//			} else {
-//				counter += 1;
-//			}
-//			System.out.println(counter);
-//		}
-//		
-//		int i = 0;
-//		for (; i <= 3; i++) {
-//			if (i++ % 2 == 0) {
-//				System.out.println("i = " + i);
-//			}
-//		}
-//		System.out.println("i after the loop = " + i);
-		
-		int num1 = 0;
-		int num2 = 0;
-		for (int i = 0; i < 5; i++) {
-			if ((++num1 > 2) && (++num2 > 2)) {
-				num1++;
+		int counter = 0;
+		while (counter <= 7) {
+			if (counter % 2 == 0) {
+				counter += 1;
+				continue;
+			} else {
+				counter += 1;
 			}
-		}
-		System.out.println(num1 + " and " + num2);
-		
-		for (int i = 2; i >= i % 2; i--) {
-			System.out.println(i);
-
+			System.out.println(counter);
 		}
 
 	}

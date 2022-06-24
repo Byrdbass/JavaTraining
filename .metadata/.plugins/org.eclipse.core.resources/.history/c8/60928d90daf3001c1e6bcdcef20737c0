@@ -20,8 +20,7 @@ public class Employee {
 	}
 
 	public Employee(int empNum, String empName, String job, double salary) {
-		//super();  // 
-		this(); //will call the default constructor - the parameterless above
+		this();
 		this.empNum = empNum;
 		this.empName = empName;
 		this.job = job;

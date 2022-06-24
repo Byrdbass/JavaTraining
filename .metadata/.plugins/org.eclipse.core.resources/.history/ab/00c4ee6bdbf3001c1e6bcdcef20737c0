@@ -80,11 +80,6 @@ public class IterationControlStructureQuiz {
 			}
 		}
 		System.out.println(num1 + " and " + num2);
-		
-		for (int i = 2; i >= i % 2; i--) {
-			System.out.println(i);
-
-		}
 
 	}
 
