@@ -1,0 +1,17 @@
+
+public class RelationalOperators {
+	public static void main(String[] args) {
+		short numOne = 10;
+		short numTwo = 20;
+		
+		//>,<,<=,>=,==,!=
+		
+		System.out.println(numOne>numTwo);  //will return a boolean value
+		System.out.println(numOne<numTwo);
+		System.out.println(numOne>=numTwo);
+		System.out.println(numOne<=numTwo);
+		System.out.println(numOne==numTwo);
+		System.out.println(numOne!=numTwo);
+		
+	}
+}

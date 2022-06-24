@@ -1,0 +1,48 @@
+package assignmentSet;
+
+public class AssignmentSet1 {
+	public static void main(String[] args) {
+		// Implement your code here 
+		
+		String Door = "D089";
+		String Street = "St. Louis Street";
+		String City = "Springfield";
+		int Zip = 62729;
+		
+		System.out.println("Door No: " + Door);
+		System.out.println("Street: " + Street);
+		System.out.println("City: " + City);
+		System.out.println("ZIP Code: " + Zip);
+		
+		//
+		
+		float pi = 3.14f;
+		int radius = 4;
+		float Area = pi*radius*radius;
+		System.out.println(Area);
+		
+		//
+		
+		float far = 50f;
+		float C = ((far-32)/9)*5;
+		System.out.println(C);
+		
+		
+		//
+		
+		int a = 6;
+		int b = 5;
+		int answer = 0;
+		if (a==b) {
+			answer=a+b;
+		}
+		else {
+			answer=(a+b)*2;
+		}
+		System.out.println(answer);
+		
+		
+		
+	}
+
+}

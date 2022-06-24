@@ -1,0 +1,13 @@
+package MethodExer1;
+
+public class Tester {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Calculator Avg1 = new Calculator();
+		Calculator.findAverage(12,8,15);
+		
+		
+	}
+
+}

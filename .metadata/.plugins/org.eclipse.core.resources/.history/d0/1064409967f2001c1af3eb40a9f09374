@@ -1,0 +1,21 @@
+package assignmentSet;
+
+public class AssignmentSet1 {
+	public static void main(String[] args) {
+		// Implement your code here 
+		
+		String Door = "D089";
+		String Street = "St. Louis Street";
+		String City = "Springfield";
+		int Zip = 62729;
+		
+		System.out.println("Door No: " + Door);
+		System.out.println("Street: " + Street);
+		System.out.println("City: " + City);
+		System.out.println("ZIP Code: " + Zip);
+		
+		
+		
+	}
+
+}

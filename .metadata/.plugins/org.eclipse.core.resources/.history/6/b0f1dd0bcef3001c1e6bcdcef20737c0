@@ -1,0 +1,22 @@
+package day4_constructor;
+
+public class Employee {
+	
+	//instance varaibles
+	int empNum;
+	String empName;
+	String job;
+	double salary;
+	
+	//parameterized constructor
+	Employee(int eNum, String emName, String j, double sal){
+		
+	}
+
+	void display() {
+		System.out.println(empNum);
+		System.out.println(empName);
+		System.out.println(job);
+		System.out.println(salary);
+	}
+}

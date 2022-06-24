@@ -1,0 +1,10 @@
+
+public class Operators_Arithematic {
+	public static void main(String[] args) {
+		short numOne = 10;
+		short numTwo = 6;
+		
+		System.out.println(numOne + numTwo);
+	}
+
+}

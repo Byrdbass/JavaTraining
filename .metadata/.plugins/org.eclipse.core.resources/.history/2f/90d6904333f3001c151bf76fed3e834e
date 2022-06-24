@@ -1,0 +1,22 @@
+
+public class Tester {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Food food1;
+		food1 = new Food();
+		//we can also just make it 
+		//Food food1 = new Food();
+		
+		food1.foodName="Pizza";
+		food1.cuisine= "Italian";
+		food1.foodType="Appetizer";
+		food1.quantityAvailable=50;
+		food1.unitPrice=15;
+		
+		food1.display();
+		
+
+	}
+
+}

@@ -1,0 +1,17 @@
+
+public class IterationControStructureExercise2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int x = 5;
+		
+		int result = 1;
+		while(result<=x) {
+			System.out.println(result + ",");
+			result = result * 2;
+			
+		}
+
+	}
+
+}

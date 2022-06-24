@@ -1,0 +1,5 @@
+package assignmentSet;
+
+public class ArmstrongNum extends AssignmentSet2 {
+
+}

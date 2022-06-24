@@ -1,0 +1,9 @@
+
+public class QuizDataTypes {
+	public static void main(String[] args) {
+		int time = 5;
+		int rate = 10;
+		int principal = 5000;
+		System.out.println((principal*rate*time)/100);
+	}
+}

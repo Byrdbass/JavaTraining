@@ -1,0 +1,21 @@
+package training;
+
+public class P16_While {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//three types of iteration: While,Do-While, and for
+		
+		//Print 0-5
+		
+		short x = 0;
+		
+		while (x<6) {
+			x++;
+			System.out.println(x); 
+			
+		}
+	}
+
+}

@@ -1,0 +1,17 @@
+package PassReferenceValues;
+
+public class Tester {
+	public static void main(String args[]) {
+		
+		//PASS by COPY
+		int x=10;
+		System.out.println(x);
+		PassByValue PB = new PassByValue();
+		PB.changeValue(x);
+		System.out.println(x);
+		
+		
+		//
+				
+	}
+}

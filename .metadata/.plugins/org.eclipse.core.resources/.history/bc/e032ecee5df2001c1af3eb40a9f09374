@@ -1,0 +1,25 @@
+package training;
+
+public class P19_ForLoop {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//USE THIS INSTEAD OF WHILE if you know the exact number of iterations
+		for(int i=0;i<=10;i++) {
+			System.out.println(i);
+		}
+		
+		
+		//prints odd numbers
+		for(int j=0;j<=10;j++) {
+			if(j%2==1) {
+				//this will skip the remaining lines iteration and takes the control to the next iteration
+				continue;
+			}
+			
+			System.out.println(j);
+		}
+	}
+
+}

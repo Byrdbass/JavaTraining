@@ -1,0 +1,6 @@
+INDEX VERSION 1.131+C:\Users\byrdb\eclipse-workspace\.metadata\.plugins\org.eclipse.jdt.core
+880218401.index
+1583294684.index
+992579964.index
+1865797976.index
+958291331.index

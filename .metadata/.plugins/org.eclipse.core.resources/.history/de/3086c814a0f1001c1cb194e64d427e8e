@@ -1,0 +1,11 @@
+
+public class BitWiseOperators {
+	public static void main(String[] args) {
+	
+		// if either of the bits is 1 then it gives 1, otherwise it gives 0
+		short a = 10;
+		short b = 5;
+		
+		
+	}
+}
