@@ -8,10 +8,18 @@ public class Tester {
 		
 		r1.area();
 		
-		r1.setLegnth(100);
+		r1.setLength(100);
 		r1.setWidth(200);
 		r1.area();
-		System.out.println(r1.area);
+		
+		Class1 c1 = new Class1();
+		System.out.println(c1.i); //public
+		//System.out.println(c1.j); private
+		
+		System.out.println(c1.k); //protected - accessible
+		System.out.println(c1.l); //default);
+		
+		
 
 	}
 
