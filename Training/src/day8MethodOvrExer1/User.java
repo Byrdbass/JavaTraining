@@ -1,19 +1,20 @@
 package day8MethodOvrExer1;
 
 public class User {
-	int id;
-	String userName;
-	String emailId;
-	double walletBalance;
+	private int id;
+	private String userName;
+	private String emailId;
+	private double walletBalance;
 	
 	public boolean makePayment(double billAmount) {
-		if ()
-		
+		if (billAmount<=this.walletBalance) {
+			this.walletBalance-=billAmount;
+			return true;
+		}
 		return false;
 	}
 
 	public User(int id, String userName, String emailId, double walletBalance) {
-		super(id,userName,emailId,walletBalance);
 		this.id = id;
 		this.userName = userName;
 		this.emailId = emailId;

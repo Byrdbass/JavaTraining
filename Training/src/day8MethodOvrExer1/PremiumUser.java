@@ -1,17 +1,18 @@
 package day8MethodOvrExer1;
 
 public class PremiumUser extends User {
-	int rewardPoints;
-	boolean makePayment(double billAmount) {
-		if(super.makePayment(billAmount)) {
-			this.rewardPoints+=
-		}
-		
-		return false;
-	}
-	public PremiumUser(int rewardPoints) {
-		super(id,userName,emailId,walletBalance);
+	private int rewardPoints;
+
+	public PremiumUser(int id, String userName, String emailId, double walletBalance, int rewardPoints) {
+		super(id, userName, emailId, walletBalance);
 		this.rewardPoints = rewardPoints;
+	}
+
+	public boolean makePayment(double billAmount) {
+		if(super.makePayment(billAmount)) {
+			this.rewardPoints+=.1*billAmount;
+		}
+		return false;
 	}
 	
 	public int getRewardPoints() {
