@@ -3,17 +3,17 @@ package assignmentSet6MethoOvr1;
 public class Faculty {
 	private String name;
 	private float basicSalary;
-	private float bonusPercentage;
-	private float carAllowancePercentage;
+	private float bonusPercentage = 4f;
+	private float carAllowancePercentage = 2.5f;
 	
 	public Faculty(String name, float basicSalary) {
-		super();
 		this.name = name;
 		this.basicSalary = basicSalary;
 	}
 	
 	double calculateSalary() {
-		double salary = 0.0;
+		double salary = this.basicSalary*(1+(this.bonusPercentage/100) + (this.carAllowancePercentage/100));
+		//double salary = basicSalary + basicSalary*(bonusPercentage/100) + basicSalary*(carAllowancePercentage/100);
 		return salary;
 	}
 

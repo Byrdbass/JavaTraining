@@ -1,9 +1,0 @@
-package PassReferenceValues;
-
-public class PassByReference {
-	void change2(PassByValue PBR){
-		PBR.changeValue(0);
-		
-		
-	}
-}

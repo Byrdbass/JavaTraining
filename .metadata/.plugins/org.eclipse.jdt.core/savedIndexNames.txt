@@ -1,6 +1,5 @@
 INDEX VERSION 1.131+C:\Users\byrdb\Documents\CODEPROJECTS\JavaTraining\.metadata\.plugins\org.eclipse.jdt.core
 1583294684.index
 880218401.index
-992579964.index
 1865797976.index
 958291331.index
