@@ -45,4 +45,17 @@ public class Food {
 	public void setUnitPrice(double unitPrice) {
 		this.unitPrice = unitPrice;
 	}
+	
+	//overidding means signature and method name are the same
+	//overriding the equals method:
+	//this is same signature as the equals method - WE ARE CREATING OUR OWN EQUALS METHOD
+	public boolean equals(Object obj) {
+		Food otherFood = (Food) obj;
+		if (this.foodName.equals(otherFood.foodName)) {
+			if (this.foodType.equals(otherFood.foodType))
+				return true;
+		}
+		return false;
+	}
+	
 }

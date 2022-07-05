@@ -20,7 +20,7 @@ public class Tester {
 //		if (foodOne == foodTwo) {
 //			System.out.println("The food objects are same!");
 //		} else {
-//			System.out.println("The food objects are different!");
+//			System.out.println("The food objects are different!"); //will print out false -comparing their location in memory
 //		}
 		
 		System.out.println(foodOne==foodTwo); //checking if they are the same in memory
@@ -31,7 +31,17 @@ public class Tester {
 		
 		System.out.println(name.equals(name1));  //OBJECT OF STRING CLASS - this will print true because the String class is different and has been overriden 
 		
-				
+		/////////////////////////////////////////////////////////////////////
+		//EXAMPLE FOR YOUTUBE -APPFICIAL
+		///////////////////////
+		
+		Student a = new Student("Mary", 19, 1122);
+		Student b = new Student("Mary", 19, 1122);
+		
+		if (a.equals(b))
+			System.out.println("they are equal!");
+		else
+			System.out.println("they are not equal");
 
 	}
 

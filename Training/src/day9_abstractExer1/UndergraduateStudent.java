@@ -20,5 +20,10 @@ public class UndergraduateStudent extends Student{
 		}
 		
 	}
+
+	public void setTestScore(int i, int j) {
+		// TODO Auto-generated method stub
+		
+	}
 	
 }
