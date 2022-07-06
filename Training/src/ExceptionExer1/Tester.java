@@ -3,7 +3,21 @@ package ExceptionExer1;
 public class Tester {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+        try {
+            Applicant applicant= new Applicant();
+            applicant.setName("Jenny");
+            applicant.setJobProfile("Clerk");
+            applicant.setAge(25);
+            
+            Validator validator = new Validator();
+                  
+            validator.validate(applicant);
+            System.out.println("Application submitted successfully!");
+        } 
+        catch (InvalidNameException|InvalidJobProfileException|InvalidAgeException e) {
+            System.out.println(e.getMessage());
+        }
+		
 
 	}
 
