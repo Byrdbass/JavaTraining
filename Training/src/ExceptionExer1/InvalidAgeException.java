@@ -1,10 +1,9 @@
 package ExceptionExer1;
 
-public class InvalidAgeException {
-	private String message;
-
+@SuppressWarnings("serial")
+public class InvalidAgeException extends Throwable {
 	public InvalidAgeException(String message) {
-		this.message = "Invalid age";
+
 	}
 	
 

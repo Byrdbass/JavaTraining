@@ -37,15 +37,15 @@ public class PurchaseDetails implements Tax {
 	public double calculateTax(double price) {
 		
 		if (this.paymentType.equals("Debit Card")) {
-			this.setTaxPercentage(.02);
+			this.setTaxPercentage(2);
 		}
 		else if (this.paymentType.equals("Credit Card")) {
-			this.setTaxPercentage(.03);
+			this.setTaxPercentage(3);
 		}
 		else {
-			this.setTaxPercentage(.04);
+			this.setTaxPercentage(4);
 		}
-		double priceAfterTax = this.taxPercentage * price + price;
+		double priceAfterTax = (this.taxPercentage/100) * price + price;
 		return priceAfterTax;
 	}
 

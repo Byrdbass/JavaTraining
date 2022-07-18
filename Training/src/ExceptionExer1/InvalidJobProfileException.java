@@ -1,11 +1,9 @@
 package ExceptionExer1;
 
-public class InvalidJobProfileException {
-	private String message;
-
+@SuppressWarnings("serial")
+public class InvalidJobProfileException extends Throwable {
 	public InvalidJobProfileException(String message) {
-		super();
-		this.message = "Invalid job profile";
+
 	}
 	
 }

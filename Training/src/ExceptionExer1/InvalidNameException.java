@@ -1,11 +1,9 @@
 package ExceptionExer1;
 
-public class InvalidNameException {
-	private String message;
-
+@SuppressWarnings("serial")
+public class InvalidNameException extends Throwable {
 	public InvalidNameException(String message) {
-		super();
-		this.message = "Invalid name";
+
 	}
 	
 	

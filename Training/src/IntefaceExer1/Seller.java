@@ -26,21 +26,21 @@ public class Seller implements Tax {
 
 	@Override
 	public double calculateTax(double price) {
-		if (this.location.equals("Middle East")) {
-			this.taxPercentage = 0.15;
+		if (this.location.equals("Middle east")) {
+			this.taxPercentage = 15;
 		}
 		else if (this.location.equals("Europe")) {
-			this.taxPercentage = .25;
+			this.taxPercentage = 25;
 		}
 		else if (this.location.equals("Canada")) {
-			this.taxPercentage = .22;
+			this.taxPercentage = 22;
 		}
 		else if (this.location.equals("Japan")) {
-			this.taxPercentage = .12;
+			this.taxPercentage = 12;
 		}
 		else
 			System.out.println("Invalid location");
-		double taxToBePaid = price * this.taxPercentage;
+		double taxToBePaid = price * (this.taxPercentage/100);
 
 		return taxToBePaid;
 	}

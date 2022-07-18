@@ -5,13 +5,6 @@ public class Applicant {
     private String jobProfile;
     private int age;
     
-    
-	public Applicant(String name, String jobProfile, int age) {
-		super();
-		this.name = name;
-		this.jobProfile = jobProfile;
-		this.age = age;
-	}
 	public String getName() {
 		return name;
 	}

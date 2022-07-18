@@ -1,44 +1,46 @@
 package ExceptionExer1;
 
-public class Validator extends Applicant {
+public class Validator{
 	
-	public Validator(String name, String jobProfile, int age) {
-		super(name, jobProfile, age);
-		// TODO Auto-generated constructor stub
+	
+	public boolean validateName(String name) {
+		if (name == null)
+			return false;
+		int countOfSpaces = 0;
+		for (int i= 0; i< name.length(); i++) {
+			if(name.charAt(i) == ' ') {
+				countOfSpaces++;
+			}
+		}
+		if(countOfSpaces == name.length())
+			return false;
+		return true;
+		
+		
+	}
+	public boolean validateJobProfile(String jobProfile) {
+		if(!(jobProfile.equalsIgnoreCase("Officer")||
+				jobProfile.equalsIgnoreCase("Executive")||
+				jobProfile.equalsIgnoreCase("Associate")||
+				jobProfile.equalsIgnoreCase("Clerk")))
+			return false;
+		return true;
+	}
+	public boolean validateAge(int age) {
+		if(age<18||age>30)
+			return false;
+		return true;
 	}
 	
-	boolean validateName(String name) {
-		try {
-			return true;
+	public void validate(Applicant applicant) throws InvalidNameException, InvalidJobProfileException, InvalidAgeException { 
+		if(!(validateName(applicant.getName()))) {
+			throw new InvalidNameException("Invalid Name");
 		}
-		catch(NullPointerException e){
-			return false;
+		if(!(validateName(applicant.getName()))) {
+			throw new InvalidJobProfileException("Invalid Job Profile");
 		}
-		catch (Exception e) {
-			return false;
+		if(!(validateName(applicant.getName()))) {
+			throw new InvalidAgeException("Invalid Age");
 		}
-		finally {
-			
-		}
-		
-		
-	}
-	boolean validateJobProfile(String jobProfile) {
-		try {
-			//do i use a conditional statement here?
-			if ( jobProfile.equals("Associate") || jobProfile.equals("Clerk") || jobProfile.equals("Executive") || jobProfile.equals("Officer") )
-			return true;
-		}
-		catch(Exception e){
-			
-		}
-		
-		return false;
-	}
-	boolean validateAge(int age) {
-		return false;
-	}
-	void validate(Applicant applicant) {
-		
 	}
 }

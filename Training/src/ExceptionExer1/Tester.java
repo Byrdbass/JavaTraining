@@ -6,7 +6,7 @@ public class Tester {
         try {
             Applicant applicant= new Applicant();
             applicant.setName("Jenny");
-            applicant.setJobProfile("Clerk");
+            applicant.setJobProfile("Assistnat");
             applicant.setAge(25);
             
             Validator validator = new Validator();
